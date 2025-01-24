@@ -71,6 +71,11 @@ p {
     color:rgb(211, 211, 211);
 }
 
+#sectioning {
+    display: flex;
+    flex-direction: column;
+}
+
 main section h3 {
     color:#42BFDD;
     margin:auto;
@@ -129,7 +134,7 @@ nav ul li a {
 
 .bubble1 {
     position: relative;
-    transform: translateX(200px) translateY(60px);
+    transform: translateX(100%) translateY(60%);
     animation: floatBubble 70s infinite ease-in-out;
     transform-origin: bottom center;
     display: inline-block;
@@ -137,7 +142,7 @@ nav ul li a {
 
 .bubble2 {
     position: relative;
-    transform: translateX(500px) translateY(50px);
+    transform: translateX(500%) translateY(50%);
     animation: floatBubble3 35s infinite ease-in-out;
     transform-origin: bottom center;
     display: inline-block;
@@ -145,7 +150,7 @@ nav ul li a {
 
 .bubble3 {
     position: relative;
-    transform: translateX(1100px) translateY(150px);
+    transform: translateX(1100%) translateY(150%);
     animation: floatBubble3 10s infinite ease-in-out;
     transform-origin: bottom center;
     display: inline-block;
@@ -153,7 +158,7 @@ nav ul li a {
 
 .bubble4 {
     position: relative;
-    transform: translateX(750px) translateY(300px);
+    transform: translateX(750%) translateY(300%);
     animation: floatBubble2 15s infinite ease-in-out;
     transform-origin: bottom center;
     display: inline-block;
@@ -161,7 +166,7 @@ nav ul li a {
 
 .bubble5 {
     position: relative;
-    transform: translateX(465px) translateY(200px);
+    transform: translateX(465%) translateY(200%);
     animation: floatBubble3 20s infinite ease-in-out;
     transform-origin: bottom center;
     display: inline-block;
@@ -170,6 +175,7 @@ nav ul li a {
 #diona_animation {
     position: relative;
     width:auto;
+    margin-bottom: 125%;
 }
 
 #diona_animation img {
@@ -257,6 +263,8 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 600px) {
-
+    #sectioning {
+        flex-direction: row;
+    }
 }
 
